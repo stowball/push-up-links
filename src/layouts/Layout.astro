@@ -1,0 +1,75 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html
+	class=`
+		font-open-sans
+		bg-fixed
+	`
+	style="background: conic-gradient(
+    #ECE806 0deg 10deg,
+    #CFE100 10deg 20deg,
+    #B1D21A 20deg 30deg,
+    #7DB833 30deg 40deg,
+    #5DA93E 40deg 50deg,
+    #429D3D 50deg 60deg,
+    #289457 60deg 70deg,
+    #239A6A 70deg 80deg,
+    #269C80 80deg 90deg,
+    #1EA5A4 90deg 100deg,
+    #1EA8B5 100deg 110deg,
+    #1BAAC7 110deg 120deg,
+    #009BD1 120deg 130deg,
+    #008FCB 130deg 140deg,
+    #007DC3 140deg 150deg,
+    #005AB0 150deg 160deg,
+    #004AA4 160deg 170deg,
+    #084092 170deg 180deg,
+    #153A90 180deg 190deg,
+    #3E2D9F 190deg 200deg,
+    #7D2799 200deg 210deg,
+    #95289A 210deg 220deg,
+    #AD2C98 220deg 230deg,
+    #D82C95 230deg 240deg,
+    #F13276 240deg 250deg,
+    #EF3761 250deg 260deg,
+    #EB3945 260deg 270deg,
+    #EB3A31 270deg 280deg,
+    #EC4930 280deg 290deg,
+    #F05F32 290deg 300deg,
+    #F27C2B 300deg 310deg,
+    #F48E2A 310deg 320deg,
+    #F79C2B 320deg 330deg,
+    #FCBA25 330deg 340deg,
+    #FDCA1C 340deg 350deg,
+    #FED918 350deg 360deg
+  );"
+	lang="en"
+>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="description"
+			content="Various links about the the tabletop game, Push-Up!, by Matt Stow."
+		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" type="image/png" href="/favicon.png" />
+		<title>{title}</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@300..800&display=swap"
+			rel="stylesheet"
+		/>
+		<meta name="author" content="Matt Stow" />
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>

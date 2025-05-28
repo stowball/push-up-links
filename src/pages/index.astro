@@ -1,0 +1,99 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Link from '../components/Link.astro';
+---
+
+<Layout title="Push-Up! links">
+	<main
+		class=`
+			flex
+			flex-col
+			gap-9
+			items-center
+			justify-center
+			min-h-screen
+			px-3
+			py-5
+			text-center
+		`
+	>
+		<div class=`
+			w-screen
+			px-3
+		`>
+			<h1
+				class=`
+				inline-block
+				font-extrabold
+				leading-tight
+				text-[clamp(2.25rem,_2vw_+_2rem,_4.25rem)]
+				bg-gradient-to-b from-[#444] to-[#333]
+				text-transparent
+				uppercase
+				bg-clip-text
+			`
+			>
+				Push-Up!
+			</h1>
+		</div>
+		<div class=`
+			flex
+			flex-col
+			gap-5
+			items-center
+			justify-center
+		`>
+			<p class=`
+				text-gray-900
+				text-xl
+			`>A tactical card game of risk and runs</p>
+		</div>
+		<ul class=`
+			flex
+			flex-col
+			gap-4
+			max-w-80
+			w-full
+		`>
+			<!-- <Link
+				href="https://youtu.be/SJpmD7oz-EI"
+				icon="youtube-color"
+				label="Watch an overview"
+			/> -->
+			<Link
+				href="https://drive.google.com/drive/folders/1_BOS_NtpEYSi0OBvidLxcq2MHtID7krm?usp=drive_link"
+				icon="google-drive-color"
+				label="View the Sell Sheet"
+			/>
+			<Link
+				href="https://docs.google.com/document/d/1y27aewVLrul2YGeKQC8u-n9z-JSmAmu4wP0vGzx-RuU/edit?usp=drive_link"
+				icon="google-docs-color"
+				label="Read the rules"
+			/>
+			<Link
+				href="https://screentop.gg/@stowball1/push-up"
+				icon="screentop"
+				label="Play on Screentop.gg"
+			/>
+			<Link
+				href="https://drive.google.com/drive/folders/1OTK7bSDQiZ5Eek0DQsYvp6c0AKEjiAHy?usp=drive_link"
+				icon="printer"
+				label="Get the Print and Play"
+			/>
+			<Link
+				href="mailto:matt@mattstow.com?subject=Push-Up!"
+				icon="email"
+				label="Email me"
+			/>
+		</ul>
+		<div class=`
+			flex
+			flex-col
+			gap-5
+			items-center
+			justify-center
+		`>
+			<p class="text-gray-100">Designed by Matt Stow</p>
+		</div>
+	</main>
+</Layout>
