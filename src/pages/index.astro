@@ -9,7 +9,7 @@ import LinkMuted from '../components/LinkMuted.astro';
 		class=`
 			flex
 			flex-col
-			gap-9
+			gap-7
 			items-center
 			justify-center
 			min-h-screen
@@ -24,11 +24,12 @@ import LinkMuted from '../components/LinkMuted.astro';
 		`>
 			<h1
 				class=`
+				[text-shadow:0_2px_4px_rgba(255,255,255,.25)]
 				inline-block
 				font-extrabold
 				leading-tight
-				text-[clamp(2.25rem,_2vw_+_2rem,_4.25rem)]
-				bg-gradient-to-b from-[#333] to-[#222]
+				text-[clamp(3rem,_2vw_+_2rem,_4rem)]
+				bg-gradient-to-b from-[#191919] to-[#242424]
 				text-transparent
 				uppercase
 				bg-clip-text
@@ -37,48 +38,61 @@ import LinkMuted from '../components/LinkMuted.astro';
 				Push-Up!
 			</h1>
 		</div>
-		<p class=`
-			text-gray-900
-			text-xl
-		`>A tactical card game of risk and runs</p>
-		<ul class=`
+		<div class=`
 			flex
 			flex-col
-			gap-4
-			max-w-80
-			w-full
+			gap-9
+			items-center
+			justify-center
 		`>
-			<!-- <Link
-				href="https://youtu.be/SJpmD7oz-EI"
-				icon="youtube-color"
-				label="Watch an overview"
-			/> -->
-			<Link
-				href="https://drive.google.com/drive/folders/1_BOS_NtpEYSi0OBvidLxcq2MHtID7krm?usp=drive_link"
-				icon="google-drive-color"
-				label="View the Sell Sheet"
-			/>
-			<Link
-				href="https://docs.google.com/document/d/1y27aewVLrul2YGeKQC8u-n9z-JSmAmu4wP0vGzx-RuU/edit?usp=drive_link"
-				icon="google-docs-color"
-				label="Read the rules"
-			/>
-			<Link
-				href="https://screentop.gg/@stowball1/push-up"
-				icon="screentop"
-				label="Play on Screentop.gg"
-			/>
-			<Link
-				href="https://drive.google.com/drive/folders/1OTK7bSDQiZ5Eek0DQsYvp6c0AKEjiAHy?usp=drive_link"
-				icon="printer"
-				label="Get the Print and Play"
-			/>
-			<LinkMuted
-				href="mailto:matt@mattstow.com?subject=Push-Up!"
-				icon="email"
-				label="Email me"
-			/>
-		</ul>
-		<p class="text-gray-100">Designed by Matt Stow</p>
+			<p
+				class=`
+			[text-shadow:0_2px_4px_rgba(255,255,255,.4)]
+			text-gray-1000
+			text-xl
+		`
+			>
+				A tactical card game of risk and runs
+			</p>
+			<ul class=`
+				flex
+				flex-col
+				gap-4
+				max-w-80
+				w-full
+			`>
+				<!-- <Link
+					href="https://youtu.be/SJpmD7oz-EI"
+					icon="youtube-color"
+					label="Watch an overview"
+				/> -->
+				<Link
+					href="https://drive.google.com/drive/folders/1_BOS_NtpEYSi0OBvidLxcq2MHtID7krm?usp=drive_link"
+					icon="google-drive-color"
+					label="View the Sell Sheet"
+				/>
+				<Link
+					href="https://docs.google.com/document/d/1y27aewVLrul2YGeKQC8u-n9z-JSmAmu4wP0vGzx-RuU/edit?usp=drive_link"
+					icon="google-docs-color"
+					label="Read the rules"
+				/>
+				<Link
+					href="https://screentop.gg/@stowball1/push-up"
+					icon="screentop"
+					label="Play on Screentop.gg"
+				/>
+				<Link
+					href="https://drive.google.com/drive/folders/1OTK7bSDQiZ5Eek0DQsYvp6c0AKEjiAHy?usp=drive_link"
+					icon="printer"
+					label="Get the Print and Play"
+				/>
+				<LinkMuted
+					href="mailto:matt@mattstow.com?subject=Push-Up!"
+					icon="email"
+					label="Email me"
+				/>
+			</ul>
+			<p class="text-gray-100">Designed by Matt Stow</p>
+		</div>
 	</main>
 </Layout>
