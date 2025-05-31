@@ -52,7 +52,7 @@ import LinkMuted from '../components/LinkMuted.astro';
 			text-xl
 		`
 			>
-				A tactical card game of risk and runs
+				A tactical card game of risk&nbsp;and&nbsp;runs
 			</p>
 			<ul class=`
 				flex
@@ -92,6 +92,28 @@ import LinkMuted from '../components/LinkMuted.astro';
 					label="Email me"
 				/>
 			</ul>
+			<div class=`
+				flex
+				flex-col
+				gap-4
+				max-w-80
+				w-full
+			`>
+				<h2 class="text-gray-100">You might also like:</h2>
+				<ul class=`
+					flex
+					gap-4
+				`>
+					<LinkMuted
+						href="https://venticotto.mattstow.com"
+						label="Venticotto"
+					/>
+					<LinkMuted
+						href="https://not-so-fast.mattstow.com"
+						label="Not So Fast"
+					/>
+				</ul>
+			</div>
 			<p class="text-gray-100">Designed by Matt Stow</p>
 		</div>
 	</main>
